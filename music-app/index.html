@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MP3</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="music">
+        <img src="https://source.unsplash.com/random" alt="" class="music-thumb" />
+        <h2 class="music-name">Sing me to Sleep</h2>
+        <input type="range" class="music-range" />
+        <audio src="./music/holo.mp3" class="music-song"></audio>
+        <div class="music-time">
+          <span class="music-duration">00:00</span>
+          <span class="music-current">00:00</span>
+        </div>
+        <div class="music-control">
+          <ion-icon name="heart-outline" class="btn-like"></ion-icon>
+          <ion-icon name="play-back-outline" class="btn-prev"></ion-icon>
+          <div class="btn-playPause">
+            <ion-icon name="play-outline" class="btn-pause"></ion-icon>
+          </div>
+          <ion-icon name="play-forward-outline" class="btn-next"></ion-icon>
+          <ion-icon name="infinite-outline" class="btn-repeat"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+/* Reset CSS */
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+  font-size: 14px;
+  font: inherit;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* End Reset CSS */
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+}
+.password {
+  display: flex;
+  margin-top: 30px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.password-input {
+  width: 100%;
+  border: none;
+  padding: 0 20px;
+  font-size: 20px;
+}
+.password-icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.password-icon ion-icon {
+  font-size: 22px;
+  cursor: pointer;
+}

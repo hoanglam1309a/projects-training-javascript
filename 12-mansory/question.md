@@ -1,0 +1,6 @@
+Đề bài: Hiển thị layout giống Pinterset, có 7 cột, khoảng cách giữa các cột, và các hàng là 15px
+Cách hoạt động: Đầu tiên cần tính lấy chiều ngang của thằng chưa các phần tử(items) này(gọi là container), ở đây do mình làm full màn hình nên mình sẽ lấy độ rộng của window bỏ đi scroll là document.body.clientWidth - gap \* 6 vì có 7(itemPerRow) cột nên sẽ có 6 khoảng trống nên phải trừ ra.
+Sau đó mình tính độ rộng các phần tử là container / 7, tiếp đến ta sẽ duyệt qua toàn bộ phần tử, các bạn sẽ thấy rằng phần tử đầu tiên sẽ có top 0 left 0, phần tử thứ 2 cho đến thứ 7 tức index = 6, sẽ có top là 0, còn left thì sẽ là độ rộng của các phần tử trước nó + gap cộng dồn lại. (x = x + items[index-1].offsetWidth + gap)
+Tuy nhiên từ phần tử số 8(index = 7), các sẽ sẽ biết là thằng số 8 sẽ có top bằng chiều cao của thằng số 1 + với vị trí của thằng số 1 so với container bao ngoài. tức là top sẽ bằng phần tử ở vị trí index - 7(số cột)(items[index -itemPerRow].offsetHeight + items[index - itemPerRow].offsetTop) lấy chiều cao và vị trí top so với thằng cha.
+Còn left thì là vị trí index - 7 lấy vị trí bên trái so với thằng cha(items[index - itemPerRow].offsetLeft). Khá rối kaka =))
+Code: Hình 2 nha, xem code chắc dễ hiểu hơn, ae ai không hiểu thì comment hỏi nà kaka

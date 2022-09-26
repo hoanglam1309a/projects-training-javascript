@@ -1,0 +1,54 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3e6e;
+}
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgb(51, 51, 51, 0.7);
+  border-radius: 50%;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+.carousel-left {
+  left: -70px;
+}
+.carousel-right {
+  right: -70px;
+}
+.carousel-list {
+  display: flex;
+  gap: 0 40px;
+  padding: 50px 0;
+  transition: all 0.25s linear;
+}
+.carousel-img {
+  width: 15%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.carousel-img:hover {
+  transform: scale(1.2);
+}

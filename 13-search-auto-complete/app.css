@@ -1,0 +1,106 @@
+/* Reset CSS */
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+  font-size: 14px;
+  font: inherit;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* End Reset CSS */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #a3e5ff;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border: 1px solid #eee;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.search-input {
+  height: 100%;
+  padding: 0 20px;
+  flex: 1;
+  font-size: 19px;
+  border: none;
+}
+.search-btn {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-btn ion-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.search-list {
+  margin-top: 20px;
+}
+.search-item {
+  padding: 10px 30px;
+  font-size: 18px;
+  margin: 0 -20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-item:hover {
+  background-color: #eee;
+}

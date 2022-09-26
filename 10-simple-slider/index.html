@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;900&display=auto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="slider-heading">Simple slider</h1>
+      <div class="slider">
+        <div class="slider-main">
+          <div class="slider-container">
+            <div class="slider-item">
+              <img
+                src="https://images.unsplash.com/photo-1612738331950-40abbddce9aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                class="slider-img"
+              />
+            </div>
+            <div class="slider-item">
+              <img
+                src="https://images.unsplash.com/photo-1541439657027-07133d717c72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGFuaW1hbHxlbnwwfDB8MHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                class="slider-img"
+              />
+            </div>
+            <div class="slider-item">
+              <img
+                src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fGFuaW1hbHxlbnwwfDB8MHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                class="slider-img"
+              />
+            </div>
+            <div class="slider-item">
+              <img
+                src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                class="slider-img"
+              />
+            </div>
+            <div class="slider-item">
+              <img
+                src="https://images.unsplash.com/photo-1609167839803-2563add6329e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                class="slider-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="slider-control prev">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </div>
+        <div class="slider-control next">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </div>
+        <ul class="slider-dots">
+          <li data-index="0" class="slider-dot active"></li>
+          <li data-index="1" class="slider-dot"></li>
+          <li data-index="2" class="slider-dot"></li>
+          <li data-index="3" class="slider-dot"></li>
+          <li data-index="4" class="slider-dot"></li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

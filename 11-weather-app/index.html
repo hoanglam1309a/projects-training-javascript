@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;900&display=auto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="weather">
+      <div class="weather-container">
+        <div class="weather-header">
+          <ion-icon class="weather-back hidden" name="arrow-back-outline"></ion-icon>
+          <span>Weather App</span>
+        </div>
+        <div class="weather-messenger hidden"></div>
+        <input type="text" placeholder="Enter city name" class="weather-input" />
+        <div class="weather-content">
+          <img src="./img/WeatherIcons/clear.svg" alt="" class="weather-img" />
+          <div class="weather-tempCover">
+            <span class="weather-temp">25</span><sup>o</sup><span>C</span>
+          </div>
+          <div class="weather-desc">Clear</div>
+          <div class="weather-location">
+            <span class="weather-city">Ha Noi</span>
+            <span>,</span>
+            <span class="weather-country">VN</span>
+          </div>
+          <div class="weather-info">
+            <div class="weather-item">
+              <div class="weather-label">Wind</div>
+              <div class="weather-wind">80%</div>
+            </div>
+            <div class="weather-item">
+              <div class="weather-label">Humidity</div>
+              <div class="weather-humidity">80%</div>
+            </div>
+            <div class="weather-item">
+              <div class="weather-label">Visibility</div>
+              <div class="weather-visibility">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

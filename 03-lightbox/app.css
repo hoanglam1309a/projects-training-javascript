@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+  font-size: 14px;
+  font: inherit;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightbox {
+  max-width: 1000px;
+}
+.lightbox-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #08417d;
+}
+.lightbox-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.lightbox-item {
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+.lightbox-modal {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightbox-modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.lightbox-image {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.lightbox-image img {
+  border-radius: 10px;
+}
+.lightbox-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+.lightbox-btn--left {
+  left: 20px;
+}
+.lightbox-btn--right {
+  right: 20px;
+}

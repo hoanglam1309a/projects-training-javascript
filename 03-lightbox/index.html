@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightbox</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="lightbox">
+        <h1 class="lightbox-heading">Click a picture you like</h1>
+        <div class="lightbox-list">
+          <div class="lightbox-item">
+            <img src="./img/img-0.jpg" alt="" />
+          </div>
+          <div class="lightbox-item">
+            <img src="./img/img-1.jpg" alt="" />
+          </div>
+          <div class="lightbox-item">
+            <img src="./img/img-2.jpg" alt="" />
+          </div>
+          <div class="lightbox-item">
+            <img src="./img/img-3.jpg" alt="" />
+          </div>
+          <div class="lightbox-item">
+            <img src="./img/img-4.jpg" alt="" />
+          </div>
+          <div class="lightbox-item">
+            <img src="./img/img-5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="lightbox-modal">
+        <div class="lightbox-image">
+          <div class="lightbox-btn lightbox-btn--left">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <img src="./img/img-1.jpg" class="lightbox-modalImg" alt="" />
+          <div class="lightbox-btn lightbox-btn--right">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
